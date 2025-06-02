@@ -1,0 +1,44 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4ff;
+}
+
+.navigationbar {
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  padding: 12px 30px;
+  box-shadow: 0 3px 8px rgba(30, 64, 175, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-items ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  cursor: pointer;
+}
